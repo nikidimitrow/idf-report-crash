@@ -1,0 +1,17 @@
+# Name,		Type,	SubType,  Offset,	Size,  Flags
+otadata,	data,	ota,      0xd000,	0x2000
+prod,		data,	nvs,      0xf000,	0x1000
+ota_0,		app,	ota_0,    0x10000,	2560K
+ota_1,		app,	ota_1,    0x290000,	2560K
+#fbl,		app,	ota_2,	  0x510000,	512K
+#factory,	app,	factory,  0x590000,	512K
+safe,		data,	nvs,      0x610000,	12K
+config,		data,	nvs,      0x613000, 280K
+appl,		data,	nvs,      0x659000,	16K
+shared,		data,	nvs,      0x65D000,	12K
+efuse_em,	data,	efuse,    0x660000,	8K
+#nvs is kept for legacy params until NV stack is fully functional. To be removed in the final solution
+nvs,		data,	nvs,      0x662000,	16K
+nvs_key,	data,	nvs_keys, 0x666000,	0x1000
+spiffs,		data,	0x82,     0x667000,	1636K
+
